@@ -1,0 +1,300 @@
+
+body{
+    display: block;
+    
+    
+}
+/*************************header*************************************************/
+header{
+    background-color: orange;
+    width: 100%;
+    height: 100px;
+}
+/*************************nav*************************************************/
+nav{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: orange;
+    text-align: center;
+    line-height: 50px;
+}
+nav a{
+    width: 45%;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(36, 23, 4);   
+}
+nav a:hover{
+    background-color: white;
+}
+/*************************header div*************************************************/
+.header-div{
+    float: right;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 233, 193);
+}
+.header-div h1{
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+    margin: 5% 5%;
+    line-height: 50px;
+}
+.header-div img{
+    border-radius: 50%;
+    margin-right:3%;
+    float: right;
+    height: 100%;
+}
+/*************************first-main************************************************/
+.first-main{
+    margin-top: 6px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 136, 0);
+    animation: background 15s infinite;
+}
+@keyframes background{
+    25%{background-color: rgb(255, 187, 98) ;}
+    50%{background-color: rgb(182, 82, 0);}
+    75%{background-color: rgb(255, 136, 0);}
+    100%{background-color: rgb(255, 115, 0) ;}
+}
+/*************************aside *************************************************/
+aside{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+}
+aside img{
+    margin-top:15% ;
+    width: 80%;
+}
+aside h2{
+    color: white;
+    padding: 17px 10px;
+    border-bottom: orange 3px double;
+}
+.aside-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.aside-div img{
+    width: 50px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: orange 3px solid;
+}
+.aside-div img:hover{
+    width: 65px;
+    border-bottom: rgb(255, 255, 255) 3px solid;
+}
+/*************************article-box*************************************************/
+.main-article-box{
+    float: right;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.main-article-box div{
+    width: 520px;
+    height: 220px;  
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.main-article-box div img{
+    width: 100%;
+    height: 100%;
+}
+/*************************second-main*************************************************/
+.second-main{
+    clear: both;
+   width: 100%;
+   height: 400px;
+   background-color: rgb(255, 255, 255);
+}
+span{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+span img{
+    width: 90%;
+    margin: 0% 10px;
+    padding: 15px 40px;
+    
+}
+
+
+@media only screen and (max-width:1400px){
+    nav{
+        width: 65%;
+    }
+    .header-div{
+        width: 35%;
+    }  
+}
+@media only screen and (max-width:1200px){
+    nav{
+        width: 60%;
+    }
+    .header-div{
+        width: 40%;
+    }  
+}
+@media only screen and (max-width:1055px){
+    .header-div img{
+       margin: 0;
+    }
+    .header-div h1{
+        margin: 5% 2%;
+    }
+
+}
+@media only screen and (max-width:960px){
+    nav{
+        width: 55%;
+    }
+    .header-div{
+        width: 45%;
+    }  
+}
+@media only screen and (max-width:855px){
+    header{
+    background-color: orange;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.header-div{
+    float: none;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 233, 193);
+}
+.header-div h1{
+    font-family: 'Roboto Mono', monospace;
+    float: none;
+    margin: 5% 5%;
+    line-height: 50px;
+}
+.header-div img{
+    border-radius: 50%;
+    margin-right:3%;
+    float: none;
+    height: 100%;
+}
+nav{
+    float: none;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+   
+}
+nav a{
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(36, 23, 4);   
+}
+nav a:hover{
+    background-color: white;
+}
+.first-main{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 136, 0);
+    animation: background 15s infinite;
+}
+@keyframes background{
+    25%{background-color: rgb(255, 187, 98) ;}
+    50%{background-color: rgb(182, 82, 0);}
+    75%{background-color: rgb(255, 136, 0);}
+    100%{background-color: rgb(255, 115, 0) ;}
+}
+.main-article-box{
+    float: none;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.main-article-box div{
+    width: 400px;
+    height: 250px;  
+    background-color: white;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.main-article-box div img{
+    width: 100%;
+    height: 100%;
+}
+aside{
+    float: none;
+    width: 80%;
+    height:110% ;
+    text-align: center;
+    background-color: black;
+    margin: auto;
+}
+aside img{
+    margin-top:15% ;
+    width: 80%;
+}
+aside h2{
+    color: white;
+    padding: 17px 10px;
+    border-bottom: orange 3px double;
+}
+.aside-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.aside-div img{
+    width: 50px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: orange 3px solid;
+}
+.aside-div img:hover{
+    width: 65px;
+    border-bottom: rgb(255, 255, 255) 3px solid;
+}
+
+.second-main{
+    clear: both;
+   width: 100%;
+   height: 400px;
+   background-color: rgb(255, 255, 255);
+}
+span{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+span img{
+    width: 80%;
+    margin: auto;
+
+    
+}
+}
